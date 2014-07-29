@@ -20,4 +20,4 @@ Seeed is a hardware innovation platform for makers to grow inspirations into dif
 
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/Grove_OLED_Display_96X96)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/OLED_Display_96X96)](https://github.com/igrigorik/ga-beacon)
