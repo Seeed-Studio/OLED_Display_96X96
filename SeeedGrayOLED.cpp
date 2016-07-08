@@ -336,7 +336,7 @@ unsigned char SeeedGrayOLED::putNumber(long long_num)
 
 
 
-void SeeedGrayOLED::drawBitmap(unsigned char *bitmaparray,int bytes)
+void SeeedGrayOLED::drawBitmap(const unsigned char *bitmaparray,int bytes)
 {
     char localAddressMode = addressingMode;
     if(addressingMode != HORIZONTAL_MODE)

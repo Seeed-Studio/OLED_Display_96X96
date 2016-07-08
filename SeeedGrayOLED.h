@@ -85,7 +85,7 @@ unsigned char putNumber(long n);
 unsigned char putFloat(float floatNumber,unsigned char decimal);
 unsigned char putFloat(float floatNumber);
 
-void drawBitmap(unsigned char *bitmaparray,int bytes);
+void drawBitmap(const unsigned char *bitmaparray,int bytes);
 
 void setHorizontalScrollProperties(bool direction,unsigned char startRow, unsigned char endRow,unsigned char startColumn, unsigned char endColumn, unsigned char scrollSpeed);
 void activateScroll();
