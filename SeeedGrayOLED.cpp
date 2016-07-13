@@ -24,12 +24,16 @@
 
 #include "Arduino.h"
 
-//#include "WProgram.h"
 #include "Wire.h"
 
 #include "SeeedGrayOLED.h"
 
 #include <avr/pgmspace.h>
+
+#if defined(__arm__) && !defined(PROGMEM)
+  #define PROGMEM
+  #define pgm_read_byte(STR) STR
+#endif
 
 // 8x8 Font ASCII 32 - 127 Implemented
 // Users can modify this to support more characters(glyphs)
@@ -332,7 +336,7 @@ unsigned char SeeedGrayOLED::putNumber(long long_num)
 
 
 
-void SeeedGrayOLED::drawBitmap(unsigned char *bitmaparray,int bytes)
+void SeeedGrayOLED::drawBitmap(const unsigned char *bitmaparray,int bytes)
 {
     char localAddressMode = addressingMode;
     if(addressingMode != HORIZONTAL_MODE)
