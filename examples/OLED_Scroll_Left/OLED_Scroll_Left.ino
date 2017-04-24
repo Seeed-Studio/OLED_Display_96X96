@@ -1,3 +1,17 @@
+/*
+  The new OLED module drive IC has tow version,
+  1. SH1107G
+  2. SSD1327
+  
+  Change the paramater of the drive IC name to init the module.
+  **
+  ** SeeedGrayOled.init(SSD1327);  // SSD1327 or SH1107G
+  **
+
+  @Copyright - Seeedstudio
+  @Author - lambor
+  @Date - 4/24/2017
+*/
 #include <Wire.h>
 #include <SeeedGrayOLED.h>
 #include <avr/pgmspace.h>
@@ -82,7 +96,7 @@ static const unsigned char SeeedLogo[] PROGMEM =
 void setup()
 {
   Wire.begin();	
-  SeeedGrayOled.init();  		        // initialize SEEED OLED display
+  SeeedGrayOled.init(SH1107G);  		        // initialize SEEED OLED display
   SeeedGrayOled.setNormalDisplay();             // Set Display to inverse mode  
   SeeedGrayOled.clearDisplay();                 //  clear the screen and set start position to top left corner
   SeeedGrayOled.deactivateScroll();             // deactivate Scroll before writing any data

@@ -29,6 +29,9 @@
 
 #include "Arduino.h"
 
+#define SH1107G  1
+#define SSD1327  2
+ 
 #define VERTICAL_MODE                       01
 #define HORIZONTAL_MODE                     02
 
@@ -64,7 +67,7 @@ public:
 
 char addressingMode;
 
-void init(void);
+void init(int IC);
 
 void setNormalDisplay();
 void setInverseDisplay();
@@ -95,7 +98,7 @@ private:
 
 unsigned char grayH;
 unsigned char grayL;
-
+int Drive_IC;
 
 };
 
