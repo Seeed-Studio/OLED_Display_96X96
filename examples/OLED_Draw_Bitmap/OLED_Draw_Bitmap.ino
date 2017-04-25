@@ -1,5 +1,5 @@
 /*
-  The new OLED module drive IC has tow version,
+  The new OLED module drive IC has two version,
   1. SH1107G
   2. SSD1327
   
@@ -8,9 +8,9 @@
   ** SeeedGrayOled.init(SSD1327);  // SSD1327 or SH1107G
   **
 
-  @Copyright - Seeedstudio
-  @Author - lambor
-  @Date - 4/24/2017
+  Copyright - Seeedstudio
+  Author - lambor
+  Date - 4/24/2017
 */
 
 #include <Wire.h>
