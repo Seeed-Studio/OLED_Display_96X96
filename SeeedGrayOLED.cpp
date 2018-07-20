@@ -290,7 +290,7 @@ void SeeedGrayOLED::setTextXY(unsigned char Row, unsigned char Column)
     Column%2 ? col_l = 0x08 : col_l = 0x00;
     sendCommand(0xb0+Row);
     sendCommand(col_l);
-    sendCommand(0x11+(Column/2));
+    sendCommand(0x10+(Column/2));
   }
 }
 
@@ -449,7 +449,7 @@ void SeeedGrayOLED::drawBitmap(const unsigned char *bitmaparray,int bytes)
   }
   else if(Drive_IC == SH1107G)
   {
-    int Row = 0, column_l = 0x00, column_h = 0x11;
+    int Row = 0, column_l = 0x00, column_h = 0x10;
 
     setHorizontalMode();
     for(int i=0;i<bytes;i++)
@@ -465,8 +465,9 @@ void SeeedGrayOLED::drawBitmap(const unsigned char *bitmaparray,int bytes)
         tmp |= ((bits>>(7-b))&0x01)<<b;
       }
       sendData(tmp);
+      // delay(10);
       Row++;
-      if(Row >= 12){
+      if(Row >= 16){
         Row = 0;
         column_l++;
         if(column_l >= 16){
