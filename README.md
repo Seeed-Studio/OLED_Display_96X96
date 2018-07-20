@@ -12,6 +12,8 @@ SeeedGrayOled.init(SSD1327);
 
 Grove OLED Display 1.12'' V2.0
 ===
+**Note that the OLED v2.0 has a 128*128 pixle screen, when display image, bitmap size should use 128*128 pixle, too.**
+
 Change driver IC to SH1107G, when using V2.0 hardware, please check initialize functionality before uploading Arduino sketch.
 
 ```
