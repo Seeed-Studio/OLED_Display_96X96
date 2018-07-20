@@ -5,16 +5,23 @@ Grove OLED Display 1.12'' V1.0
 ===
 It is a 16 color grayscale 96×96 dot matrix OLED display module with Grove compatible 4pin I2C interface. Grove - OLED 96x96 is constructed with 96 x 96 dot matrix OLED module LY120 and SSD1327 driver IC. Comparing to LCD, OLED screens are more competitive, which has a number of advantages such as high brightness, self-emission, high contrast ratio, slim / thin outline, wide viewing angle, wide temperature range, and low power consumption.
 
+- See ./examples/OLED_SSD1327_v1
+
 When using V1.0 hardware, please check initialize functionality before uploading Arduino sketch.
 ```
 SeeedGrayOled.init(SSD1327);
 ```
 
+
+
 Grove OLED Display 1.12'' V2.0
 ===
-**Note that the OLED v2.0 has a 128*128 pixle screen, when display image, bitmap size should use 128*128 pixle, too.**
+**Note that the OLED v2.0 has a 128x128 pixle screen, when display image, bitmap size should use 128x128 pixle, too.**
+
+- See ./examples/OLED_SH1107G_v2
 
 Change driver IC to SH1107G, when using V2.0 hardware, please check initialize functionality before uploading Arduino sketch.
+
 
 ```
 SeeedGrayOled.init(SH1107G);
