@@ -12,11 +12,9 @@ When using V1.0 hardware, please check initialize functionality before uploading
 SeeedGrayOled.init(SSD1327);
 ```
 
-
-
 Grove OLED Display 1.12'' V2.0
 ===
-**Note that the OLED v2.0 has a 128x128 pixle screen, when display image, bitmap size should use 128x128 pixle, too.**
+**Note that the OLED v2.0 has a 128x128 dot matrix OLED display, when showing image, bitmap size should be 128x128 pixel.**
 
 - See ./examples/OLED_SH1107G_v2
 
