@@ -43,6 +43,7 @@
 #define SeeedGrayOLED_Display_On_Cmd        0xAF
 
 #define SeeedGrayOLED_Normal_Display_Cmd    0xA4
+#define SeeedGrayOLED_Normal_Display_Cmd_SH1107G    0xA6
 #define SeeedGrayOLED_Inverse_Display_Cmd   0xA7
 #define SeeedGrayOLED_Activate_Scroll_Cmd   0x2F
 #define SeeedGrayOLED_Dectivate_Scroll_Cmd  0x2E
