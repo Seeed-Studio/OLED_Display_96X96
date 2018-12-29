@@ -285,12 +285,9 @@ void SeeedGrayOLED::setTextXY(unsigned char Row, unsigned char Column)
   }
   else if(Drive_IC == SH1107G)
   {
-    uint8_t col_l;
-
-    Column%2 ? col_l = 0x08 : col_l = 0x00;
-    sendCommand(0xb0+Row);
-    sendCommand(col_l);
-    sendCommand(0x10+(Column/2));
+    sendCommand(0xb0 + (Row&0x0F));  // set page/row
+    sendCommand(0x10 + ((Column>>4)&0x07));  // set column high 3 byte
+    sendCommand(Column & 0x0F);  // set column low 4 byte
   }
 }
 
