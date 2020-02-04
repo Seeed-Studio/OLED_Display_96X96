@@ -1,4 +1,4 @@
-## OLED_Display_96X96
+## OLED_Display_96X96  [![Build Status](https://travis-ci.com/Seeed-Studio/OLED_Display_96X96.svg?branch=master)](https://travis-ci.com/Seeed-Studio/OLED_Display_96X96)
 ![image](https://statics3.seeedstudio.com/images/product/oled1281281.jpg)
 
 Grove OLED Display 1.12'' V1.0
