@@ -15,7 +15,6 @@
 
 #include <Wire.h>
 #include <SeeedGrayOLED.h>
-#include <avr/pgmspace.h>
 
 
 void setup() {
