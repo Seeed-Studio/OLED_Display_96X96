@@ -28,7 +28,6 @@
 
 #include "SeeedGrayOLED.h"
 
-#include <avr/pgmspace.h>
 
 #if defined(__arm__) && !defined(PROGMEM)
     #define PROGMEM
