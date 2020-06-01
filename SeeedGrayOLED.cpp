@@ -469,7 +469,11 @@ void SeeedGrayOLED::deactivateScroll() {
 }
 
 void SeeedGrayOLED::setNormalDisplay() {
-    sendCommand(SeeedGrayOLED_Normal_Display_Cmd);
+    if (Drive_IC == SSD1327) {
+        sendCommand(SeeedGrayOLED_Normal_Display_Cmd);
+    } else if (Drive_IC == SH1107G) {
+        sendCommand(SeeedGrayOLED_Normal_Display_Cmd_SH1107G);
+    }
 }
 
 void SeeedGrayOLED::setInverseDisplay() {
